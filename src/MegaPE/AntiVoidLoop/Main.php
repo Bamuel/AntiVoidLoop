@@ -11,18 +11,24 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 
 class Main extends PluginBase implements Listener{
-    
     private $x;
     private $y;
     private $z;
     private $startingHeight;
     
     public function onEnable(){
+        $this->saveDefaultConfig();
+        $this->reloadConfig();
+        
         $config = $this->getConfig();
         $this->x = $config->get("x");
         $this->y = $config->get("y");
         $this->z = $config->get("z");
         $this->startingHeight = $config->get("starting-height");
+    }
+    
+    public function onDisable(){
+    $this->saveConfig();
     }
     
     public function onVoidLoop(PlayerMoveEvent $event){
