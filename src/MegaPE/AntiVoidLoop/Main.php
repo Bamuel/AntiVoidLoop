@@ -9,6 +9,7 @@ use pocketmine\level\Level;
 use pocketmine\level\Position;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
+use pocketmine\math\Vector3;
 
 class Main extends PluginBase implements Listener{
     private $x;
@@ -36,8 +37,7 @@ class Main extends PluginBase implements Listener{
         $level = $player->getLevel();
         
         if($player->getY() <= $this->startingHeight){
-            $spawn = new Position($this->x,$this->y,$this->z,$level);
-            $player->teleport($spawn);
+            $sender->teleport(new Vector3($this->x,$this->y,$this->z,$level));
         }
     }
 }
