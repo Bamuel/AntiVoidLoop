@@ -1,0 +1,8 @@
+name: DeletePlayerData
+version: 1.0
+api: [1.9.0]
+author: MegaSamNinja & Darunia18
+description: Fixes Void Bug
+main: megasamninja\AntiVoidLoop\Main
+load: POSTWORLD
+website: www.megape.net
