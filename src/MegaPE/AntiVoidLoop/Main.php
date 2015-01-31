@@ -37,6 +37,7 @@ class Main extends PluginBase implements Listener{
         $level = $player->getLevel();
         
         if($player->getY() <= $this->startingHeight){
+            $sender->sendMessage("You have been freed from the void"); //a respones to see if Line 39 works
             $sender->teleport(new Vector3($this->x,$this->y,$this->z,$level));
         }
     }
