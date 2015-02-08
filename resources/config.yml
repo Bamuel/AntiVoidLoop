@@ -1,0 +1,5 @@
+# AntiVoidLoop Config
+
+# This is the height at which the plugin begins teleporting players to spawn.
+# Whatever it is set at, every player on that Y level or below will be teleported to spawn.
+starting-height: 1
