@@ -1,7 +1,7 @@
 name: AntiVoidLoop
 main: MegaPE\AntiVoidLoop\Main
-version: 1.1
+version: 1.2
 api: 1.9.0
-author: Darunia18 & iksaku
+author: Darunia18 & iksaku & MegaSamNinja
 description: Plugin to prevent the void death loop
-website: http://http://www.megape.net/
+website: http://www.megape.net/
